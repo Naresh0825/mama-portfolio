@@ -98,3 +98,52 @@ header .navbar ul li a:hover{
     background: var(--yellow);
 }
 
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+
+/* Media queries */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:900px){
+    header{
+        left:-120%;
+    }
+
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+}
+
+@media (max-width:768){
+    header{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:450px){
+    header{
+        width: 100%;
+    }
+}
+
+
